@@ -3,11 +3,9 @@ package testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+
 import org.testng.annotations.Test;
 
 import com.swag.qa.base.TestBase;
@@ -72,6 +70,13 @@ public class HomePageTest extends TestBase{
 		Assert.assertNotEquals(beforeSorting , afterSorting);
 		
 	}
+	
+	@Test(priority = 5, dataProvider = "CartData" , dataProviderClass = HomePage.class)
+	public void addToCart(String ItemToAdd)
+	{
+		homepage.addToCart(ItemToAdd);
+	}
+	
 	
 //	@Test(priority = 5)
 //	public void popUp()

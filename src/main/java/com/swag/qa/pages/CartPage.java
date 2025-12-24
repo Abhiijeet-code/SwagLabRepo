@@ -6,9 +6,9 @@ import com.swag.qa.base.TestBase;
 
 public class CartPage extends TestBase{
 	
-	public void cartList()
+	public boolean cartList()
 	{
-		driver.findElement(By.xpath("//div[@class='cart_list']")).isDisplayed();
+		return driver.findElement(By.xpath("//div[@class='cart_list']")).isDisplayed();
 	}
 
 }

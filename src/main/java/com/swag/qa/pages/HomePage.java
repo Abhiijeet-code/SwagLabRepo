@@ -1,5 +1,7 @@
 package com.swag.qa.pages;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -7,8 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.DataProvider;
 
 import com.swag.qa.base.TestBase;
+import com.swag.qa.utilities.TestUtil;
 
 public class HomePage extends TestBase{
 
@@ -18,6 +22,7 @@ public class HomePage extends TestBase{
 	
 	@FindBy(id = "shopping_cart_container")
 	WebElement cart;
+	
 	
 	
 	List<WebElement> inventoryList = driver.findElements(By.xpath("//div[@class='inventory_item']"));
@@ -84,4 +89,19 @@ public class HomePage extends TestBase{
 		return driver.findElement(By.xpath("//div[contains(@class,'inventory_item_name')]")).getText();
 	}
 	
+	public void addToCart(String itemname)
+	{
+		driver.findElement(By.xpath("//div[contains(text(),'"+itemname+"')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]")).click();
+	}
+	
+	public void remove(String itemname)
+	{
+		driver.findElement(By.xpath("//div[contains(text(),'"+itemname+"')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'remove')]")).click();
+	}
+	
+	@DataProvider(name = "CartData")
+	public Object[][] getCart() throws FileNotFoundException, IOException
+	{
+		return TestUtil.getData("Home");
+	}
 }
