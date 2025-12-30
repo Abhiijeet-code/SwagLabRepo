@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-30T16:43:25 IST" name="SwagLab testing" finished-at="2025-12-30T16:44:10 IST" duration-ms="45051">
+    <groups>
+    </groups>
+    <test started-at="2025-12-30T16:43:25 IST" name="Swag Lab test cases" finished-at="2025-12-30T16:44:10 IST" duration-ms="45051">
+      <class name="testcases.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:45 IST" name="setup" finished-at="2025-12-30T16:43:48 IST" duration-ms="2918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checkTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkTitle()[pri:1, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:48 IST" name="checkTitle" finished-at="2025-12-30T16:43:48 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:48 IST" name="tearDown" finished-at="2025-12-30T16:43:48 IST" duration-ms="149" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkTitle status=SUCCESS method=HomePageTest.checkTitle()[pri:1, instance:testcases.HomePageTest@2dc995f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:48 IST" name="setup" finished-at="2025-12-30T16:43:51 IST" duration-ms="3191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checkListCount()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkListCount()[pri:2, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:51 IST" name="checkListCount" finished-at="2025-12-30T16:43:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkListCount -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:51 IST" name="tearDown" finished-at="2025-12-30T16:43:52 IST" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkListCount status=SUCCESS method=HomePageTest.checkListCount()[pri:2, instance:testcases.HomePageTest@2dc995f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:52 IST" name="setup" finished-at="2025-12-30T16:43:55 IST" duration-ms="3275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checksortedList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checksortedList()[pri:3, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:55 IST" name="checksortedList" finished-at="2025-12-30T16:43:55 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checksortedList -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:55 IST" name="tearDown" finished-at="2025-12-30T16:43:55 IST" duration-ms="174" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checksortedList status=SUCCESS method=HomePageTest.checksortedList()[pri:3, instance:testcases.HomePageTest@2dc995f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:55 IST" name="setup" finished-at="2025-12-30T16:43:59 IST" duration-ms="3254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.addToCart(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCart(java.lang.String)[pri:4, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:59 IST" name="addToCart" data-provider="CartData" finished-at="2025-12-30T16:43:59 IST" duration-ms="159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Backpack]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:59 IST" name="tearDown" finished-at="2025-12-30T16:43:59 IST" duration-ms="238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCart status=SUCCESS method=HomePageTest.addToCart(java.lang.String)[pri:4, instance:testcases.HomePageTest@2dc995f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:43:59 IST" name="setup" finished-at="2025-12-30T16:44:03 IST" duration-ms="3884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.addToCart(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCart(java.lang.String)[pri:4, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:44:03 IST" name="addToCart" data-provider="CartData" finished-at="2025-12-30T16:44:03 IST" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Bike Light]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:44:03 IST" name="tearDown" finished-at="2025-12-30T16:44:03 IST" duration-ms="248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCart status=SUCCESS method=HomePageTest.addToCart(java.lang.String)[pri:4, instance:testcases.HomePageTest@2dc995f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:44:03 IST" name="setup" finished-at="2025-12-30T16:44:09 IST" duration-ms="5993" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.addToCart(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCart(java.lang.String)[pri:4, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:44:09 IST" name="addToCart" data-provider="CartData" finished-at="2025-12-30T16:44:10 IST" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Onesie]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@2dc995f4]" started-at="2025-12-30T16:44:10 IST" name="tearDown" finished-at="2025-12-30T16:44:10 IST" duration-ms="305" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCart status=SUCCESS method=HomePageTest.addToCart(java.lang.String)[pri:4, instance:testcases.HomePageTest@2dc995f4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.HomePageTest -->
+      <class name="testcases.LoginPageTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:24 IST" name="startReport" finished-at="2025-12-30T16:43:25 IST" duration-ms="364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:25 IST" name="setup" finished-at="2025-12-30T16:43:33 IST" duration-ms="7947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginPageTest.loginTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTitle()[pri:1, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:33 IST" name="loginTitle" finished-at="2025-12-30T16:43:33 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTitle -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:33 IST" name="teardown" finished-at="2025-12-30T16:43:33 IST" duration-ms="391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTitle status=SUCCESS method=LoginPageTest.loginTitle()[pri:1, instance:testcases.LoginPageTest@43f82e78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:33 IST" name="setup" finished-at="2025-12-30T16:43:36 IST" duration-ms="2736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginPageTest.Logo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Logo()[pri:2, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:36 IST" name="Logo" finished-at="2025-12-30T16:43:36 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logo -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:36 IST" name="teardown" finished-at="2025-12-30T16:43:36 IST" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Logo status=SUCCESS method=LoginPageTest.Logo()[pri:2, instance:testcases.LoginPageTest@43f82e78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:37 IST" name="setup" finished-at="2025-12-30T16:43:40 IST" duration-ms="3070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginPageTest.loginTest(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:40 IST" name="loginTest" data-provider="loginData" finished-at="2025-12-30T16:43:41 IST" duration-ms="729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:41 IST" name="teardown" finished-at="2025-12-30T16:43:42 IST" duration-ms="458" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@43f82e78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:42 IST" name="setup" finished-at="2025-12-30T16:43:44 IST" duration-ms="2499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.LoginPageTest.loginTest(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:44 IST" name="loginTest" data-provider="loginData" finished-at="2025-12-30T16:43:45 IST" duration-ms="544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:43:45 IST" name="teardown" finished-at="2025-12-30T16:43:45 IST" duration-ms="487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@43f82e78] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.LoginPageTest@43f82e78]" started-at="2025-12-30T16:44:10 IST" name="endReport" finished-at="2025-12-30T16:44:11 IST" duration-ms="727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- testcases.LoginPageTest -->
+    </test> <!-- Swag Lab test cases -->
+  </suite> <!-- SwagLab testing -->
+</testng-results>

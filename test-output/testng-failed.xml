@@ -3,17 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.HomePageTest">
+      <class name="testcases.LoginPageTest">
         <methods>
+          <include name="loginTest" invocation-numbers="1"/>
+          <include name="teardown"/>
           <include name="extentSetup"/>
-          <include name="checkListCount"/>
-          <include name="setup"/>
-          <include name="checkTitle"/>
-          <include name="tearDown"/>
           <include name="endReport"/>
+          <include name="setup"/>
           <include name="startReport"/>
         </methods>
-      </class> <!-- testcases.HomePageTest -->
+      </class> <!-- testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

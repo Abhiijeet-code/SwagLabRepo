@@ -10,8 +10,8 @@
 	<test name = "Swag Lab test cases">
 		<classes>
 			
-			<class name = "testcases.LoginPageTest"></class>
-			<class name = "testcases.HomePageTest"></class>
+			<class name = "testcases.LoginPageTest"/>
+			<class name = "testcases.HomePageTest"/>
 			
 		
 		</classes>

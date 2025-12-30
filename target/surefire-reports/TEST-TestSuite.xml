@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="48.127" tests="10" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Abhi\Practice\SwagLabs\target\test-classes;C:\Abhi\Practice\SwagLabs\target\classes;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-java\4.27.0\selenium-java-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-api\4.27.0\selenium-api-4.27.0.jar;C:\Users\abhid\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.27.0\selenium-chrome-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.27.0\selenium-chromium-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-json\4.27.0\selenium-json-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.27.0\selenium-manager-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.27.0\selenium-devtools-v129-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.27.0\selenium-devtools-v130-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.27.0\selenium-devtools-v131-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.27.0\selenium-devtools-v85-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.27.0\selenium-edge-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.27.0\selenium-firefox-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-http\4.27.0\selenium-http-4.27.0.jar;C:\Users\abhid\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.27.0\selenium-ie-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.27.0\selenium-remote-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\abhid\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\abhid\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\abhid\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\abhid\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\abhid\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\abhid\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-api\1.44.1\opentelemetry-api-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-context\1.44.1\opentelemetry-context-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.44.1\opentelemetry-exporter-logging-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.44.1\opentelemetry-sdk-common-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.44.1\opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.44.1\opentelemetry-sdk-extension-autoconfigure-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.44.1-alpha\opentelemetry-api-incubator-1.44.1-alpha.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.44.1\opentelemetry-sdk-trace-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.44.1\opentelemetry-sdk-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.44.1\opentelemetry-sdk-metrics-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.44.1\opentelemetry-sdk-logs-1.44.1.jar;C:\Users\abhid\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-os\4.27.0\selenium-os-4.27.0.jar;C:\Users\abhid\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.27.0\selenium-safari-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-support\4.27.0\selenium-support-4.27.0.jar;C:\Users\abhid\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\abhid\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\abhid\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\abhid\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\abhid\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\abhid\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\abhid\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\abhid\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\abhid\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\abhid\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\abhid\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\abhid\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\abhid\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\abhid\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\abhid\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\abhid\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\abhid\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\abhid\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\abhid\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\abhid\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\abhid\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\abhid\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\abhid\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\abhid\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\abhid\AppData\Local\Temp\surefire16048853758916080870\surefirebooter12551521273390888590.jar C:\Users\abhid\AppData\Local\Temp\surefire16048853758916080870 2025-12-30T16-43-17_181-jvmRun1 surefire10130615472632796842tmp surefire_017361044741356666505tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Abhi\Practice\SwagLabs\target\test-classes;C:\Abhi\Practice\SwagLabs\target\classes;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-java\4.27.0\selenium-java-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-api\4.27.0\selenium-api-4.27.0.jar;C:\Users\abhid\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.27.0\selenium-chrome-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.27.0\selenium-chromium-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-json\4.27.0\selenium-json-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.27.0\selenium-manager-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.27.0\selenium-devtools-v129-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.27.0\selenium-devtools-v130-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.27.0\selenium-devtools-v131-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.27.0\selenium-devtools-v85-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.27.0\selenium-edge-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.27.0\selenium-firefox-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-http\4.27.0\selenium-http-4.27.0.jar;C:\Users\abhid\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.27.0\selenium-ie-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.27.0\selenium-remote-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\abhid\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\abhid\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\abhid\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\abhid\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\abhid\.m2\repository\com\google\errorprone\error_prone_annotations\2.28.0\error_prone_annotations-2.28.0.jar;C:\Users\abhid\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-api\1.44.1\opentelemetry-api-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-context\1.44.1\opentelemetry-context-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.44.1\opentelemetry-exporter-logging-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.44.1\opentelemetry-sdk-common-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.44.1\opentelemetry-sdk-extension-autoconfigure-spi-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.44.1\opentelemetry-sdk-extension-autoconfigure-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.44.1-alpha\opentelemetry-api-incubator-1.44.1-alpha.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.44.1\opentelemetry-sdk-trace-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.44.1\opentelemetry-sdk-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.44.1\opentelemetry-sdk-metrics-1.44.1.jar;C:\Users\abhid\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.44.1\opentelemetry-sdk-logs-1.44.1.jar;C:\Users\abhid\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-os\4.27.0\selenium-os-4.27.0.jar;C:\Users\abhid\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.27.0\selenium-safari-driver-4.27.0.jar;C:\Users\abhid\.m2\repository\org\seleniumhq\selenium\selenium-support\4.27.0\selenium-support-4.27.0.jar;C:\Users\abhid\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\abhid\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\abhid\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\abhid\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\abhid\.m2\repository\org\apache\poi\poi\5.2.5\poi-5.2.5.jar;C:\Users\abhid\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\abhid\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\abhid\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\abhid\.m2\repository\commons-io\commons-io\2.15.0\commons-io-2.15.0.jar;C:\Users\abhid\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\abhid\.m2\repository\org\apache\poi\poi-ooxml\5.2.5\poi-ooxml-5.2.5.jar;C:\Users\abhid\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.5\poi-ooxml-lite-5.2.5.jar;C:\Users\abhid\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.0\xmlbeans-5.2.0.jar;C:\Users\abhid\.m2\repository\org\apache\commons\commons-compress\1.25.0\commons-compress-1.25.0.jar;C:\Users\abhid\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\abhid\.m2\repository\org\apache\poi\poi-ooxml-schemas\4.1.2\poi-ooxml-schemas-4.1.2.jar;C:\Users\abhid\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\abhid\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\abhid\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\abhid\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\abhid\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\abhid\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\abhid\.m2\repository\org\apache\logging\log4j\log4j-api\2.22.1\log4j-api-2.22.1.jar;C:\Users\abhid\.m2\repository\org\apache\logging\log4j\log4j-core\2.22.1\log4j-core-2.22.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\abhid"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-09-14"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Abhi\Practice\SwagLabs"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\abhid\AppData\Local\Temp\surefire16048853758916080870\surefirebooter12551521273390888590.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17+35-LTS-2724"/>
+    <property name="user.name" value="abhid"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\abhid\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\abhid\AppData\Local\Temp\"/>
+    <property name="java.version" value="17"/>
+    <property name="user.dir" value="C:\Abhi\Practice\SwagLabs"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\nodejs\;C:\Abhi\apache-maven-3.9.11\bin;C:\Program Files\Git\cmd;C:\Users\abhid\AppData\Local\Microsoft\WindowsApps;C:\Users\abhid\AppData\Roaming\npm;C:\Users\abhid\AppData\Local\Programs\Microsoft VS Code\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17+35-LTS-2724"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="loginTitle" classname="testcases.LoginPageTest" time="0.026">
+    <system-out><![CDATA[Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Dec 30, 2025 4:43:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:43:30 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Logo" classname="testcases.LoginPageTest" time="0.086">
+    <system-out><![CDATA[Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.xpath: //div[contains(@class, 'login_logo')]
+Found element: By.xpath: //div[contains(@class, 'login_logo')]
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:43:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:43:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginTest[standard_user, secret_sauce](1)" classname="testcases.LoginPageTest" time="0.734">
+    <system-out><![CDATA[2025-12-30 16:43:37 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-30 16:43:37 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.name: user-name
+Found element: By.name: user-name
+Sending keys to: [[ChromeDriver: chrome on windows (bd015160855c09af999d163bdaff2348)] -> name: user-name]
+Keys sent to: [[ChromeDriver: chrome on windows (bd015160855c09af999d163bdaff2348)] -> name: user-name]
+Trying to find element: By.name: password
+Found element: By.name: password
+Sending keys to: [[ChromeDriver: chrome on windows (bd015160855c09af999d163bdaff2348)] -> name: password]
+Keys sent to: [[ChromeDriver: chrome on windows (bd015160855c09af999d163bdaff2348)] -> name: password]
+Trying to find element: By.xpath: //input[@type='submit']
+Found element: By.xpath: //input[@type='submit']
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:43:39 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:43:39 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="loginTest[problem_user, secret_sauce](2)" classname="testcases.LoginPageTest" time="0.544">
+    <system-out><![CDATA[Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.name: user-name
+Found element: By.name: user-name
+Sending keys to: [[ChromeDriver: chrome on windows (538690e2935c2dcd56fce44d1413290c)] -> name: user-name]
+Keys sent to: [[ChromeDriver: chrome on windows (538690e2935c2dcd56fce44d1413290c)] -> name: user-name]
+Trying to find element: By.name: password
+Found element: By.name: password
+Sending keys to: [[ChromeDriver: chrome on windows (538690e2935c2dcd56fce44d1413290c)] -> name: password]
+Keys sent to: [[ChromeDriver: chrome on windows (538690e2935c2dcd56fce44d1413290c)] -> name: password]
+Trying to find element: By.xpath: //input[@type='submit']
+Found element: By.xpath: //input[@type='submit']
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:43:43 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:43:43 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="checkTitle" classname="testcases.HomePageTest" time="0.014">
+    <system-out><![CDATA[Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.name: user-name
+Found element: By.name: user-name
+Sending keys to: [[ChromeDriver: chrome on windows (11d209a75fab47513b4b94c462a641d1)] -> name: user-name]
+Keys sent to: [[ChromeDriver: chrome on windows (11d209a75fab47513b4b94c462a641d1)] -> name: user-name]
+Trying to find element: By.name: password
+Found element: By.name: password
+Sending keys to: [[ChromeDriver: chrome on windows (11d209a75fab47513b4b94c462a641d1)] -> name: password]
+Keys sent to: [[ChromeDriver: chrome on windows (11d209a75fab47513b4b94c462a641d1)] -> name: password]
+Trying to find element: By.xpath: //input[@type='submit']
+Found element: By.xpath: //input[@type='submit']
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:43:47 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:43:47 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="checkListCount" classname="testcases.HomePageTest" time="0">
+    <system-out><![CDATA[Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.name: user-name
+Found element: By.name: user-name
+Sending keys to: [[ChromeDriver: chrome on windows (4418bb5f620a780513680723d776e36a)] -> name: user-name]
+Keys sent to: [[ChromeDriver: chrome on windows (4418bb5f620a780513680723d776e36a)] -> name: user-name]
+Trying to find element: By.name: password
+Found element: By.name: password
+Sending keys to: [[ChromeDriver: chrome on windows (4418bb5f620a780513680723d776e36a)] -> name: password]
+Keys sent to: [[ChromeDriver: chrome on windows (4418bb5f620a780513680723d776e36a)] -> name: password]
+Trying to find element: By.xpath: //input[@type='submit']
+Found element: By.xpath: //input[@type='submit']
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:43:50 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:43:50 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="checksortedList" classname="testcases.HomePageTest" time="0.258">
+    <system-out><![CDATA[Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.name: user-name
+Found element: By.name: user-name
+Sending keys to: [[ChromeDriver: chrome on windows (f21923f9ada24b954126e096d859fe57)] -> name: user-name]
+Keys sent to: [[ChromeDriver: chrome on windows (f21923f9ada24b954126e096d859fe57)] -> name: user-name]
+Trying to find element: By.name: password
+Found element: By.name: password
+Sending keys to: [[ChromeDriver: chrome on windows (f21923f9ada24b954126e096d859fe57)] -> name: password]
+Keys sent to: [[ChromeDriver: chrome on windows (f21923f9ada24b954126e096d859fe57)] -> name: password]
+Trying to find element: By.xpath: //input[@type='submit']
+Found element: By.xpath: //input[@type='submit']
+Trying to find element: By.xpath: //div[contains(@class,'inventory_item_name')]
+Found element: By.xpath: //div[contains(@class,'inventory_item_name')]
+Trying to find element: By.xpath: //select[contains(@class, 'product_sort_container')]
+Found element: By.xpath: //select[contains(@class, 'product_sort_container')]
+Trying to click on: [[[[ChromeDriver: chrome on windows (f21923f9ada24b954126e096d859fe57)] -> xpath: //select[contains(@class, 'product_sort_container')]]] -> xpath: .//option[@value = "za"]]
+Clicked on: [[[[ChromeDriver: chrome on windows (f21923f9ada24b954126e096d859fe57)] -> xpath: //select[contains(@class, 'product_sort_container')]]] -> xpath: .//option[@value = "za"]]
+Trying to find element: By.xpath: //div[contains(@class,'inventory_item_name')]
+Found element: By.xpath: //div[contains(@class,'inventory_item_name')]
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:43:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:43:53 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="addToCart[Sauce Labs Backpack](1)" classname="testcases.HomePageTest" time="0.15">
+    <system-out><![CDATA[2025-12-30 16:43:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /xl/_rels/workbook.xml.rels
+2025-12-30 16:43:55 DEBUG PackageRelationshipCollection:307 - Parsing relationship: /_rels/.rels
+Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.name: user-name
+Found element: By.name: user-name
+Sending keys to: [[ChromeDriver: chrome on windows (50edfa0fe8be79e5d8c63918b4e2989a)] -> name: user-name]
+Keys sent to: [[ChromeDriver: chrome on windows (50edfa0fe8be79e5d8c63918b4e2989a)] -> name: user-name]
+Trying to find element: By.name: password
+Found element: By.name: password
+Sending keys to: [[ChromeDriver: chrome on windows (50edfa0fe8be79e5d8c63918b4e2989a)] -> name: password]
+Keys sent to: [[ChromeDriver: chrome on windows (50edfa0fe8be79e5d8c63918b4e2989a)] -> name: password]
+Trying to find element: By.xpath: //input[@type='submit']
+Found element: By.xpath: //input[@type='submit']
+Trying to find element: By.xpath: //div[contains(text(),'Sauce Labs Backpack')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]
+Found element: By.xpath: //div[contains(text(),'Sauce Labs Backpack')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]
+Trying to click on: [[ChromeDriver: chrome on windows (50edfa0fe8be79e5d8c63918b4e2989a)] -> xpath: //div[contains(text(),'Sauce Labs Backpack')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]]
+Clicked on: [[ChromeDriver: chrome on windows (50edfa0fe8be79e5d8c63918b4e2989a)] -> xpath: //div[contains(text(),'Sauce Labs Backpack')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]]
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:43:57 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:43:57 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="addToCart[Sauce Labs Bike Light](2)" classname="testcases.HomePageTest" time="0.173">
+    <system-out><![CDATA[Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.name: user-name
+Found element: By.name: user-name
+Sending keys to: [[ChromeDriver: chrome on windows (86770a5bcff9a7a6af5fea5b3c0f9eb9)] -> name: user-name]
+Keys sent to: [[ChromeDriver: chrome on windows (86770a5bcff9a7a6af5fea5b3c0f9eb9)] -> name: user-name]
+Trying to find element: By.name: password
+Found element: By.name: password
+Sending keys to: [[ChromeDriver: chrome on windows (86770a5bcff9a7a6af5fea5b3c0f9eb9)] -> name: password]
+Keys sent to: [[ChromeDriver: chrome on windows (86770a5bcff9a7a6af5fea5b3c0f9eb9)] -> name: password]
+Trying to find element: By.xpath: //input[@type='submit']
+Found element: By.xpath: //input[@type='submit']
+Trying to find element: By.xpath: //div[contains(text(),'Sauce Labs Bike Light')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]
+Found element: By.xpath: //div[contains(text(),'Sauce Labs Bike Light')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]
+Trying to click on: [[ChromeDriver: chrome on windows (86770a5bcff9a7a6af5fea5b3c0f9eb9)] -> xpath: //div[contains(text(),'Sauce Labs Bike Light')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]]
+Clicked on: [[ChromeDriver: chrome on windows (86770a5bcff9a7a6af5fea5b3c0f9eb9)] -> xpath: //div[contains(text(),'Sauce Labs Bike Light')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]]
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:44:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:44:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="addToCart[Sauce Labs Onesie](3)" classname="testcases.HomePageTest" time="0.188">
+    <system-out><![CDATA[Before navigating to: https://www.saucedemo.com/
+Navigated to: https://www.saucedemo.com/
+Trying to find element: By.name: user-name
+Found element: By.name: user-name
+Sending keys to: [[ChromeDriver: chrome on windows (3e5874a81f9384109a8dafb8191d7201)] -> name: user-name]
+Keys sent to: [[ChromeDriver: chrome on windows (3e5874a81f9384109a8dafb8191d7201)] -> name: user-name]
+Trying to find element: By.name: password
+Found element: By.name: password
+Sending keys to: [[ChromeDriver: chrome on windows (3e5874a81f9384109a8dafb8191d7201)] -> name: password]
+Keys sent to: [[ChromeDriver: chrome on windows (3e5874a81f9384109a8dafb8191d7201)] -> name: password]
+Trying to find element: By.xpath: //input[@type='submit']
+Found element: By.xpath: //input[@type='submit']
+Trying to find element: By.xpath: //div[contains(text(),'Sauce Labs Onesie')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]
+Found element: By.xpath: //div[contains(text(),'Sauce Labs Onesie')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]
+Trying to click on: [[ChromeDriver: chrome on windows (3e5874a81f9384109a8dafb8191d7201)] -> xpath: //div[contains(text(),'Sauce Labs Onesie')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]]
+Clicked on: [[ChromeDriver: chrome on windows (3e5874a81f9384109a8dafb8191d7201)] -> xpath: //div[contains(text(),'Sauce Labs Onesie')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]]
+]]></system-out>
+    <system-err><![CDATA[Dec 30, 2025 4:44:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 143
+Dec 30, 2025 4:44:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 143.0.7499.109. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.27.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>

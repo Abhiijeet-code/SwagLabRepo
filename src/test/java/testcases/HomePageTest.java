@@ -7,19 +7,18 @@ import java.lang.reflect.Method;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
+
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.markuputils.Markup;
+
 import com.swag.qa.base.TestBase;
 import com.swag.qa.pages.CartPage;
 import com.swag.qa.pages.HomePage;
@@ -42,12 +41,12 @@ public class HomePageTest extends TestBase{
 		super();
 	}
 	
-	@BeforeClass()
-	public void setup()
+	@BeforeMethod()
+	public void setup(Method method)
 	{
 		initialization();
 		
-		//wait = new WebDriverWait(driver ,Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver ,Duration.ofSeconds(20));
 		
 		loginpage = new LoginPage();
 		menupage = new MenuPage();
@@ -56,19 +55,14 @@ public class HomePageTest extends TestBase{
 		
 		//wait.until(ExpectedConditions.visibilityOfAllElements(homepage.inventorylist));
 		
-		new WebDriverWait(driver, Duration.ofSeconds(30))
-        .until(webDriver ->
-                ((JavascriptExecutor) webDriver)
+		wait.until(webDriver ->((JavascriptExecutor) webDriver)
                         .executeScript("return document.readyState")
                         .equals("complete"));
 		
+		TestUtil.extentTest = TestUtil.extent.createTest(method.getName());
+		
 	}
 	
-	@BeforeMethod
-	public void extentSetup(Method method)
-	{
-		TestUtil.extentTest = TestUtil.extent.createTest(method.getName());
-	}
 	
 	@Test(priority=1)
 	public void checkTitle()
@@ -115,20 +109,12 @@ public class HomePageTest extends TestBase{
 	}
 	
 	
-//	@Test(priority = 5)
-//	public void popUp()
-//	{
-//		driver.switchTo().alert().accept();
-//	}
-	
-
-
 	@AfterMethod
 	public void tearDown(ITestResult result) {
 
 	    
 	        TestUtil.handleTestFailure(driver, result);
 
-	   // driver.quit();
+	    driver.quit();
 	}
 }

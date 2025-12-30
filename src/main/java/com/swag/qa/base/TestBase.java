@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
@@ -23,7 +25,9 @@ public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public static JavascriptExecutor js;
 	
+	protected static final Logger log = LogManager.getLogger(TestBase.class);
 	
 	public TestBase()
 	{
@@ -56,7 +60,7 @@ public class TestBase {
 		
 		driver =new EventFiringDecorator<>(new WebEventListener()).decorate(driver);
 		
-		
+		js = (JavascriptExecutor)driver;
 		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
