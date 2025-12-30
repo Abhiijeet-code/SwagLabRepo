@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [SwagLab testing]">
-  <listeners>
-    <listener class-name="com.swag.qa.utilities.ExtentTestNGReporter"/>
-  </listeners>
-  <test thread-count="5" name="Swag Lab test cases(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="testcases.HomePageTest">
         <methods>
+          <include name="extentSetup"/>
+          <include name="checkListCount"/>
           <include name="setup"/>
-          <include name="checkortesList"/>
-          <include name="teardown"/>
+          <include name="checkTitle"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="startReport"/>
         </methods>
       </class> <!-- testcases.HomePageTest -->
     </classes>
-  </test> <!-- Swag Lab test cases(failed) -->
-</suite> <!-- Failed suite [SwagLab testing] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

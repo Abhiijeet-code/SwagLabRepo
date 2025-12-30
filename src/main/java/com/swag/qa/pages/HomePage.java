@@ -24,14 +24,12 @@ public class HomePage extends TestBase{
 	WebElement cart;
 	
 	
-	
-	List<WebElement> inventoryList = driver.findElements(By.xpath("//div[@class='inventory_item']"));
-	
-	
-	public void homepage()
+	public HomePage()
 	{
 		PageFactory.initElements(driver, this);
 	}
+	
+	public List<WebElement> inventorylist = driver.findElements(By.xpath("//div[@class='inventory_item']"));
 	
 	public String homeTitle()
 	{
@@ -76,7 +74,7 @@ public class HomePage extends TestBase{
 	
 	public int inventoryList()
 	{
-		return inventoryList.size();
+		return inventorylist.size();
 	}
 	
 	public String beforeSorting()
@@ -99,9 +97,5 @@ public class HomePage extends TestBase{
 		driver.findElement(By.xpath("//div[contains(text(),'"+itemname+"')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'remove')]")).click();
 	}
 	
-	@DataProvider(name = "CartData")
-	public Object[][] getCart() throws FileNotFoundException, IOException
-	{
-		return TestUtil.getData("Home");
-	}
+	
 }

@@ -11,7 +11,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.swag.qa.utilities.TestUtil;
 import com.swag.qa.utilities.WebEventListener;
 
@@ -60,6 +64,20 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.IMPLICIT_WAIT));
 		
 		driver.get(prop.getProperty("url"));
+	}
+	
+	@BeforeSuite
+	public void startReport() {
+
+	    ExtentSparkReporter spark = new ExtentSparkReporter("test-output/ExtentReport.html");
+
+	    TestUtil.extent = new ExtentReports();
+	    TestUtil.extent.attachReporter(spark);
+	}
+
+	@AfterSuite
+	public void endReport() {
+	    TestUtil.extent.flush();
 	}
 
 }
