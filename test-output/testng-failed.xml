@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [SwagLab testing]">
+  <listeners>
+    <listener class-name="com.swag.qa.Analyzer.AnnotationTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Swag Lab test cases(failed)">
     <classes>
-      <class name="testcases.LoginPageTest">
+      <class name="testcases.HomePageTest">
         <methods>
-          <include name="loginTest" invocation-numbers="1"/>
-          <include name="teardown"/>
-          <include name="extentSetup"/>
-          <include name="endReport"/>
           <include name="setup"/>
+          <include name="checkListCount"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
           <include name="startReport"/>
         </methods>
-      </class> <!-- testcases.LoginPageTest -->
+      </class> <!-- testcases.HomePageTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Swag Lab test cases(failed) -->
+</suite> <!-- Failed suite [SwagLab testing] -->

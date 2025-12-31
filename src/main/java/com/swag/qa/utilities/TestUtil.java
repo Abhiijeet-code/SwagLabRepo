@@ -58,6 +58,26 @@ public class TestUtil extends TestBase {
 
 		return data;
 	}
+	
+	public static Object[] getRowData(String sheetName) throws IOException, FileNotFoundException {
+		FileInputStream fis = new FileInputStream(
+				System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\SwagLabsTestData.xlsx");
+		Workbook wb = WorkbookFactory.create(fis);
+		Sheet sheet = wb.getSheet(sheetName);
+
+		int rows = sheet.getPhysicalNumberOfRows();
+		
+		Object[] data = new Object[rows - 1];
+
+		for (int i = 1; i < rows; i++) {
+
+		
+				data[i - 1] = sheet.getRow(i).getCell(0).toString();
+		
+		}
+
+		return data;
+	}
 
 	public static String takeScreenshot(WebDriver driver, String testName) {
 		String path = System.getProperty("user.dir") + "/test-output/Screenshots/" + testName + "_"

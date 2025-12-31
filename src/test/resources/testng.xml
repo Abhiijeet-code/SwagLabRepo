@@ -6,6 +6,11 @@
 		<listener class-name="com.swag.qa.utilities.ExtentTestNGReporter" />
 		
 	</listeners>
+	
+	<listeners>
+		<listener class-name="com.swag.qa.Analyzer.AnnotationTransformer" />
+		
+	</listeners>
 
 	<test name = "Swag Lab test cases">
 		<classes>

@@ -1,17 +1,384 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results retried="3" ignored="3" total="14" passed="7" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-30T15:53:09 IST" name="Default suite" finished-at="2025-12-30T15:53:23 IST" duration-ms="13764">
+  <suite started-at="2025-12-31T12:13:47 IST" name="SwagLab testing" finished-at="2025-12-31T12:14:16 IST" duration-ms="28989">
     <groups>
     </groups>
-    <test started-at="2025-12-30T15:53:09 IST" name="Default test" finished-at="2025-12-30T15:53:23 IST" duration-ms="13764">
+    <test started-at="2025-12-31T12:13:47 IST" name="Swag Lab test cases" finished-at="2025-12-31T12:14:16 IST" duration-ms="28989">
+      <class name="testcases.HomePageTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:13:57 IST" name="setup" finished-at="2025-12-31T12:14:00 IST" duration-ms="2235" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checkTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkTitle()[pri:1, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:00 IST" name="checkTitle" finished-at="2025-12-31T12:14:00 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:00 IST" name="tearDown" finished-at="2025-12-31T12:14:00 IST" duration-ms="284" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkTitle status=SUCCESS method=HomePageTest.checkTitle()[pri:1, instance:testcases.HomePageTest@5d465e4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:00 IST" name="setup" finished-at="2025-12-31T12:14:02 IST" duration-ms="2144" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checkListCount()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="checkListCount()[pri:2, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:02 IST" name="checkListCount" finished-at="2025-12-31T12:14:02 IST" duration-ms="9" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [5] but found [6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [5] but found [6]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.HomePageTest.checkListCount(HomePageTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkListCount -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:02 IST" name="tearDown" finished-at="2025-12-31T12:14:02 IST" duration-ms="177" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkListCount status=SKIP method=HomePageTest.checkListCount()[pri:2, instance:testcases.HomePageTest@5d465e4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:02 IST" name="setup" finished-at="2025-12-31T12:14:04 IST" duration-ms="2222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checkListCount()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="checkListCount()[pri:2, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:04 IST" name="checkListCount" finished-at="2025-12-31T12:14:04 IST" duration-ms="2" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [5] but found [6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [5] but found [6]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.HomePageTest.checkListCount(HomePageTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkListCount -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:04 IST" name="tearDown" finished-at="2025-12-31T12:14:05 IST" duration-ms="208" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkListCount status=SKIP method=HomePageTest.checkListCount()[pri:2, instance:testcases.HomePageTest@5d465e4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:05 IST" name="setup" finished-at="2025-12-31T12:14:07 IST" duration-ms="2273" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checkListCount()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="checkListCount()[pri:2, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:07 IST" name="checkListCount" finished-at="2025-12-31T12:14:07 IST" duration-ms="4" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [5] but found [6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [5] but found [6]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.HomePageTest.checkListCount(HomePageTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkListCount -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:07 IST" name="tearDown" finished-at="2025-12-31T12:14:08 IST" duration-ms="541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkListCount status=SKIP method=HomePageTest.checkListCount()[pri:2, instance:testcases.HomePageTest@5d465e4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:08 IST" name="setup" finished-at="2025-12-31T12:14:10 IST" duration-ms="2183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checkListCount()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkListCount()[pri:2, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:10 IST" name="checkListCount" finished-at="2025-12-31T12:14:10 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [5] but found [6]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [5] but found [6]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.HomePageTest.checkListCount(HomePageTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkListCount -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:10 IST" name="tearDown" finished-at="2025-12-31T12:14:10 IST" duration-ms="299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkListCount status=FAILURE method=HomePageTest.checkListCount()[pri:2, instance:testcases.HomePageTest@5d465e4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:10 IST" name="setup" finished-at="2025-12-31T12:14:12 IST" duration-ms="2192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.checksortedList()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checksortedList()[pri:3, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:12 IST" name="checksortedList" finished-at="2025-12-31T12:14:12 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checksortedList -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:12 IST" name="tearDown" finished-at="2025-12-31T12:14:13 IST" duration-ms="347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checksortedList status=SUCCESS method=HomePageTest.checksortedList()[pri:3, instance:testcases.HomePageTest@5d465e4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:13 IST" name="setup" finished-at="2025-12-31T12:14:15 IST" duration-ms="2246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void testcases.HomePageTest.addToCart(java.lang.String[])]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCart([Ljava.lang.String;)[pri:4, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:15 IST" name="addToCart" data-provider="CartData" finished-at="2025-12-31T12:14:15 IST" duration-ms="285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@261a66b8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:testcases.HomePageTest@5d465e4b]" started-at="2025-12-31T12:14:15 IST" name="tearDown" finished-at="2025-12-31T12:14:16 IST" duration-ms="312" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCart status=SUCCESS method=HomePageTest.addToCart([Ljava.lang.String;)[pri:4, instance:testcases.HomePageTest@5d465e4b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.HomePageTest -->
       <class name="testcases.LoginPageTest">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:09 IST" name="startReport" finished-at="2025-12-30T15:53:09 IST" duration-ms="210" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:46 IST" name="startReport" finished-at="2025-12-31T12:13:47 IST" duration-ms="209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:09 IST" name="setup" finished-at="2025-12-30T15:53:13 IST" duration-ms="3696" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:47 IST" name="setup" finished-at="2025-12-31T12:13:49 IST" duration-ms="2758" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,22 +389,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTitle()[pri:1, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:13 IST" name="loginTitle" finished-at="2025-12-30T15:53:13 IST" duration-ms="27" status="PASS">
+        <test-method signature="loginTitle()[pri:1, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:49 IST" name="loginTitle" finished-at="2025-12-31T12:13:49 IST" duration-ms="29" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitle -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:13 IST" name="teardown" finished-at="2025-12-30T15:53:13 IST" duration-ms="321" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:49 IST" name="teardown" finished-at="2025-12-31T12:13:50 IST" duration-ms="292" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTitle status=SUCCESS method=LoginPageTest.loginTitle()[pri:1, instance:testcases.LoginPageTest@3d8bbcdc] output={null}]]]>
+                <![CDATA[[TestResult name=loginTitle status=SUCCESS method=LoginPageTest.loginTitle()[pri:1, instance:testcases.LoginPageTest@611df6e3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:13 IST" name="setup" finished-at="2025-12-30T15:53:16 IST" duration-ms="2415" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:50 IST" name="setup" finished-at="2025-12-31T12:13:52 IST" duration-ms="1866" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,22 +415,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Logo()[pri:2, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:16 IST" name="Logo" finished-at="2025-12-30T15:53:16 IST" duration-ms="59" status="PASS">
+        <test-method signature="Logo()[pri:2, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:52 IST" name="Logo" finished-at="2025-12-31T12:13:52 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Logo -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:16 IST" name="teardown" finished-at="2025-12-30T15:53:16 IST" duration-ms="305" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:52 IST" name="teardown" finished-at="2025-12-31T12:13:52 IST" duration-ms="251" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Logo status=SUCCESS method=LoginPageTest.Logo()[pri:2, instance:testcases.LoginPageTest@3d8bbcdc] output={null}]]]>
+                <![CDATA[[TestResult name=Logo status=SUCCESS method=LoginPageTest.Logo()[pri:2, instance:testcases.LoginPageTest@611df6e3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:17 IST" name="setup" finished-at="2025-12-30T15:53:19 IST" duration-ms="2296" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:52 IST" name="setup" finished-at="2025-12-31T12:13:54 IST" duration-ms="1768" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,7 +441,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:19 IST" name="loginTest" data-provider="loginData" finished-at="2025-12-30T15:53:19 IST" duration-ms="451" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:54 IST" name="loginTest" data-provider="loginData" finished-at="2025-12-31T12:13:55 IST" duration-ms="412" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,18 +457,18 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:19 IST" name="teardown" finished-at="2025-12-30T15:53:20 IST" duration-ms="336" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:55 IST" name="teardown" finished-at="2025-12-31T12:13:55 IST" duration-ms="311" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@3d8bbcdc] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@611df6e3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:20 IST" name="setup" finished-at="2025-12-30T15:53:22 IST" duration-ms="2404" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:55 IST" name="setup" finished-at="2025-12-31T12:13:57 IST" duration-ms="1748" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -112,7 +479,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:22 IST" name="loginTest" data-provider="loginData" finished-at="2025-12-30T15:53:23 IST" duration-ms="417" status="PASS">
+        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:57 IST" name="loginTest" data-provider="loginData" finished-at="2025-12-31T12:13:57 IST" duration-ms="385" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,22 +495,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:23 IST" name="teardown" finished-at="2025-12-30T15:53:23 IST" duration-ms="300" status="PASS">
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:13:57 IST" name="teardown" finished-at="2025-12-31T12:13:57 IST" duration-ms="290" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@3d8bbcdc] output={null}]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest(java.lang.String,java.lang.String)[pri:3, instance:testcases.LoginPageTest@611df6e3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.LoginPageTest@3d8bbcdc]" started-at="2025-12-30T15:53:23 IST" name="endReport" finished-at="2025-12-30T15:53:23 IST" duration-ms="261" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:testcases.LoginPageTest@611df6e3]" started-at="2025-12-31T12:14:16 IST" name="endReport" finished-at="2025-12-31T12:14:16 IST" duration-ms="379" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- testcases.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Swag Lab test cases -->
+  </suite> <!-- SwagLab testing -->
 </testng-results>
