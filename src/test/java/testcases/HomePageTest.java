@@ -24,6 +24,8 @@ import com.swag.qa.pages.LoginPage;
 import com.swag.qa.pages.MenuPage;
 import com.swag.qa.utilities.TestUtil;
 
+import io.qameta.allure.*;
+
 public class HomePageTest extends TestBase {
 
 	LoginPage loginpage;
@@ -59,6 +61,9 @@ public class HomePageTest extends TestBase {
 	}
 
 	@Test(priority = 1)
+	@Story("Verify Title")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Verify title of the page")
 	public void checkTitle() {
 		String titleExp = homepage.homeTitle();
 		Assert.assertEquals(titleExp, "Swag Labs");
@@ -66,20 +71,26 @@ public class HomePageTest extends TestBase {
 	}
 
 	@Test(priority = 2)
+	@Story("Verify List Count")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Verify total no. of items on the page")
 	public void checkListCount() {
 		String listCount = Integer.toString(homepage.inventoryList());
 
-		Assert.assertEquals(listCount, "5");
+		Assert.assertEquals(listCount, "6");
 	}
 
 	@Test(priority = 3)
+	@Story("Verify Sorting")
+    @Severity(SeverityLevel.NORMAL)
+    @Description("Verify the items are sorted correctly")
 	public void checksortedList() {
 
-		beforeSorting = homepage.beforeSorting();
+		beforeSorting = homepage.sortedItem();
 
 		homepage.sort("za");
 
-		String afterSorting = homepage.afterSorting();
+		String afterSorting = homepage.sortedItem();
 
 		Assert.assertNotEquals(beforeSorting, afterSorting);
 
@@ -91,6 +102,9 @@ public class HomePageTest extends TestBase {
 	}
 
 	@Test(priority = 4, dataProvider = "CartData")
+	@Story("Add items to Cart")
+    @Severity(SeverityLevel.CRITICAL)
+    @Description("Adding items to cart")
 	public void addToCart(String[] ItemToAdd) {
 		for (String item : ItemToAdd) {
 			homepage.addToCart(item);

@@ -1,2 +1,12 @@
-testcases\LoginPageTest.class
 testcases\HomePageTest.class
+com\swag\qa\Analyzer\RetryAnalyzer.class
+com\swag\qa\pages\LoginPage.class
+com\swag\qa\pages\CartPage.class
+com\swag\qa\Analyzer\AnnotationTransformer.class
+testcases\LoginPageTest.class
+com\swag\qa\utilities\WebEventListener.class
+com\swag\qa\base\TestBase.class
+com\swag\qa\pages\MenuPage.class
+com\swag\qa\pages\HomePage.class
+com\swag\qa\utilities\ExtentTestNGReporter.class
+com\swag\qa\utilities\TestUtil.class

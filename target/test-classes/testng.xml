@@ -15,9 +15,9 @@
 	<test name = "Swag Lab test cases">
 		<classes>
 			
-			<class name = "testcases.LoginPageTest"/>
+	     	<class name = "testcases.LoginPageTest"/> 
 			<class name = "testcases.HomePageTest"/>
-			
+			  
 		
 		</classes>
 	
