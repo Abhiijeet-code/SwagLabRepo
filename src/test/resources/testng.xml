@@ -1,26 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <suite name="SwagLab testing">
-	
+
 	<listeners>
-		<listener class-name="com.swag.qa.utilities.ExtentTestNGReporter" />
-		
-	</listeners>
-	
-	<listeners>
-		<listener class-name="com.swag.qa.Analyzer.AnnotationTransformer" />
-		
+		<listener
+			class-name="com.swag.qa.utilities.ExtentTestNGReporter" />
+		<listener
+			class-name="com.swag.qa.utilities.TestAllureListener" />
+		<listener
+			class-name="com.swag.qa.Analyzer.AnnotationTransformer" />
+
 	</listeners>
 
-	<test name = "Swag Lab test cases">
+
+	<test name="Swag Lab test cases">
 		<classes>
+
+			<class name="testcases.LoginPageTest" />
+			<class name="testcases.HomePageTest" />
+
 			
-	     	<class name = "testcases.LoginPageTest"/> 
-			<class name = "testcases.HomePageTest"/>
-			  
-		
+
 		</classes>
-	
-	
+
+
 	</test>
 </suite> <!-- Suite -->

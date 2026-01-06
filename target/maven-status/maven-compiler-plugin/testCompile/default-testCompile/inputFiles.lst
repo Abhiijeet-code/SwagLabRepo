@@ -5,7 +5,9 @@ C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\pages\CartPage.java
 C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\pages\HomePage.java
 C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\pages\LoginPage.java
 C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\pages\MenuPage.java
+C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\utilities\AllureSmokeTest.java
 C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\utilities\ExtentTestNGReporter.java
+C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\utilities\TestAllureListener.java
 C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\utilities\TestUtil.java
 C:\Abhi\Practice\SwagLabs\src\test\java\com\swag\qa\utilities\WebEventListener.java
 C:\Abhi\Practice\SwagLabs\src\test\java\testcases\HomePageTest.java

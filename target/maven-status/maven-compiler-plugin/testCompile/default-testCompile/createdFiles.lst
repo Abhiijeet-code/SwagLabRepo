@@ -7,6 +7,8 @@ testcases\LoginPageTest.class
 com\swag\qa\utilities\WebEventListener.class
 com\swag\qa\base\TestBase.class
 com\swag\qa\pages\MenuPage.class
+com\swag\qa\utilities\TestAllureListener.class
 com\swag\qa\pages\HomePage.class
 com\swag\qa\utilities\ExtentTestNGReporter.class
 com\swag\qa\utilities\TestUtil.class
+com\swag\qa\utilities\AllureSmokeTest.class

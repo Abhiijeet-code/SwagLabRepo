@@ -15,19 +15,25 @@ import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.swag.qa.utilities.TestAllureListener;
 import com.swag.qa.utilities.TestUtil;
 import com.swag.qa.utilities.WebEventListener;
 
+@Listeners({TestAllureListener.class})
 public class TestBase {
 	
 	public static WebDriver driver;
 	public static Properties prop;
 	public static JavascriptExecutor js;
 	
+	public static ThreadLocal<WebDriver> tdriver = new ThreadLocal<>();
+	
 	protected static final Logger log = LogManager.getLogger(TestBase.class);
+	
 	
 	public TestBase()
 	{
@@ -49,6 +55,15 @@ public class TestBase {
 		}
 	}
 	
+	public static WebDriver getDriver()
+	{
+		return tdriver.get();
+	}
+	
+	public static void setDriver(WebDriver driverRef) {
+	    tdriver.set(driverRef);
+	}
+	
 	@SuppressWarnings({ })
 	public static void initialization()
 	{
@@ -68,6 +83,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(TestUtil.IMPLICIT_WAIT));
 		
 		driver.get(prop.getProperty("url"));
+		setDriver(driver);
 	}
 	
 	@BeforeSuite

@@ -61,7 +61,7 @@ public class LoginPage extends TestBase{
 		return SwagLogo.isDisplayed();
 	}
 	
-	@Step("Login with credential username : {0} and Password : {1}")
+	@Step("Login with credential username : {0} and Password : {1}") // 0 and 1 defines the arguments from method
 	public HomePage login(String un, String pwd)
 	{
 		username.sendKeys(un);

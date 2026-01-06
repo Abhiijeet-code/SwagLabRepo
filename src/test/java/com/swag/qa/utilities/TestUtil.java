@@ -93,7 +93,7 @@ public class TestUtil extends TestBase {
 		return path;
 	}
 
-	public static void handleTestFailure(WebDriver driver, ITestResult result) {
+	public static void handleScreenshot(WebDriver driver, ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
 
 			String path = takeScreenshot(driver, result.getName());
@@ -102,6 +102,10 @@ public class TestUtil extends TestBase {
 			extentTest.log(Status.FAIL, "Test Case Failed : " + result.getThrowable());
 
 			extentTest.addScreenCaptureFromPath(path);
+			
+			 
+		       // 	TestAllureListener.saveScreenshotPNG(driver);
+		       
 		}
 		if (result.getStatus() == ITestResult.SUCCESS) {
 
@@ -109,6 +113,10 @@ public class TestUtil extends TestBase {
 
 			extentTest.log(Status.PASS, "Test Case Passed : " + result.getName());
 			extentTest.addScreenCaptureFromPath(path);
+			
+			 
+		       // 	TestAllureListener.saveScreenshotPNG(driver);
+		        
 		}
 	}
 }

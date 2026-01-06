@@ -44,9 +44,9 @@ public class HomePage extends TestBase{
 		return new MenuPage();
 	}
 	
-	@Step("Selecting the value fron sorting dropdown")
+	@Step("Selecting the value from sorting dropdown")
 	public void sort(String value)
-	{
+	{ 
 		WebElement sortDD = driver.findElement(By.xpath("//select[contains(@class, 'product_sort_container')]"));
 		
 	/*
@@ -81,7 +81,7 @@ public class HomePage extends TestBase{
 		return inventorylist.size();
 	}
 	
-	@Step("Geeting the sorted items on the page")
+	@Step("Getting the sorted items on the page")
 	public String sortedItem()
 	{
 		return driver.findElement(By.xpath("//div[contains(@class,'inventory_item_name')]")).getText();

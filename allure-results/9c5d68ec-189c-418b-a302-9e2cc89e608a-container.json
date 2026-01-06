@@ -1,0 +1,1 @@
+{"uuid":"9c5d68ec-189c-418b-a302-9e2cc89e608a","name":"SwagLab testing","children":["f8a01eb7-60c3-4b10-b09a-00249c80f295"],"befores":[{"name":"startReport","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1767712902898,"stop":1767712903518}],"afters":[],"start":1767712902835,"stop":1767712945240}

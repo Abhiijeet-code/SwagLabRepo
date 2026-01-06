@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
 
@@ -11,14 +12,17 @@ import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.swag.qa.base.TestBase;
 import com.swag.qa.pages.LoginPage;
+import com.swag.qa.utilities.TestAllureListener;
 import com.swag.qa.utilities.TestUtil;
 
 import io.qameta.allure.*;
 
+@Listeners({TestAllureListener.class})
 public class LoginPageTest extends TestBase {
 
 	LoginPage loginPage;
@@ -64,14 +68,17 @@ public class LoginPageTest extends TestBase {
     @Description("Verify Login with correct credentials")
 	public void loginTest(String username, String password) {
 		loginPage.login(username, password);
-
+		TestAllureListener.saveScreenshotPNG(driver);	
 	}
 
-	@AfterMethod()
+	@AfterMethod(alwaysRun = true)
 	public void teardown(ITestResult result) {
 		
-		TestUtil.handleTestFailure(driver, result);
-		driver.quit();
+		TestUtil.handleScreenshot(driver, result);
+
+		 
+		        driver.quit();
+		    
 	}
 
 }

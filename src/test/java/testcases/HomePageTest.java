@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
-
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
@@ -15,6 +15,7 @@ import org.testng.annotations.AfterMethod;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.swag.qa.base.TestBase;
@@ -22,10 +23,12 @@ import com.swag.qa.pages.CartPage;
 import com.swag.qa.pages.HomePage;
 import com.swag.qa.pages.LoginPage;
 import com.swag.qa.pages.MenuPage;
+import com.swag.qa.utilities.TestAllureListener;
 import com.swag.qa.utilities.TestUtil;
 
 import io.qameta.allure.*;
 
+@Listeners({TestAllureListener.class})
 public class HomePageTest extends TestBase {
 
 	LoginPage loginpage;
@@ -67,7 +70,7 @@ public class HomePageTest extends TestBase {
 	public void checkTitle() {
 		String titleExp = homepage.homeTitle();
 		Assert.assertEquals(titleExp, "Swag Labs");
-
+		TestAllureListener.saveScreenshotPNG(driver);
 	}
 
 	@Test(priority = 2)
@@ -78,6 +81,7 @@ public class HomePageTest extends TestBase {
 		String listCount = Integer.toString(homepage.inventoryList());
 
 		Assert.assertEquals(listCount, "6");
+		TestAllureListener.saveScreenshotPNG(driver);
 	}
 
 	@Test(priority = 3)
@@ -111,11 +115,15 @@ public class HomePageTest extends TestBase {
 		}
 	}
 
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult result) {
 
-		TestUtil.handleTestFailure(driver, result);
+		TestUtil.handleScreenshot(driver, result);
 
-		driver.quit();
+		 
+		        driver.quit();
+		    
 	}
+	
+	
 }
