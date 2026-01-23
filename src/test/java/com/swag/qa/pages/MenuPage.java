@@ -8,11 +8,11 @@ import com.swag.qa.base.TestBase;
 public class MenuPage extends TestBase{
 
 	public void menuOption(String option) {
-		driver.findElement(By.xpath("//a[contains(text(),'"+option+"')]")).click();
+		getDriver().findElement(By.xpath("//a[contains(text(),'"+option+"')]")).click();
 	}
 	
 	public String pageTitle()
 	{
-		return driver.getTitle();
+		return getDriver().getTitle();
 	}
 }

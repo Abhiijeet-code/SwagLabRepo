@@ -47,7 +47,7 @@ public class HomePageTest extends TestBase {
 	public void setup(Method method) {
 		initialization();
 
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
 
 		loginpage = new LoginPage();
 		menupage = new MenuPage();
@@ -70,7 +70,7 @@ public class HomePageTest extends TestBase {
 	public void checkTitle() {
 		String titleExp = homepage.homeTitle();
 		Assert.assertEquals(titleExp, "Swag Labs");
-		TestAllureListener.saveScreenshotPNG(driver);
+		TestAllureListener.saveScreenshotPNG(getDriver());
 	}
 
 	@Test(priority = 2)
@@ -81,7 +81,7 @@ public class HomePageTest extends TestBase {
 		String listCount = Integer.toString(homepage.inventoryList());
 
 		Assert.assertEquals(listCount, "6");
-		TestAllureListener.saveScreenshotPNG(driver);
+		TestAllureListener.saveScreenshotPNG(getDriver());
 	}
 
 	@Test(priority = 3)
@@ -118,10 +118,10 @@ public class HomePageTest extends TestBase {
 	@AfterMethod(alwaysRun = true)
 	public void tearDown(ITestResult result) {
 
-		TestUtil.handleScreenshot(driver, result);
+		TestUtil.handleScreenshot(getDriver(), result);
 
 		 
-		        driver.quit();
+		getDriver().quit();
 		    
 	}
 	

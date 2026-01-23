@@ -68,16 +68,16 @@ public class LoginPageTest extends TestBase {
     @Description("Verify Login with correct credentials")
 	public void loginTest(String username, String password) {
 		loginPage.login(username, password);
-		TestAllureListener.saveScreenshotPNG(driver);	
+		TestAllureListener.saveScreenshotPNG(getDriver());	
 	}
 
 	@AfterMethod(alwaysRun = true)
 	public void teardown(ITestResult result) {
 		
-		TestUtil.handleScreenshot(driver, result);
+		TestUtil.handleScreenshot(getDriver(), result);
 
 		 
-		        driver.quit();
+		getDriver().quit();
 		    
 	}
 

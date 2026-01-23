@@ -25,15 +25,15 @@ public class HomePage extends TestBase{
 	
 	public HomePage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
-	public List<WebElement> inventorylist = driver.findElements(By.xpath("//div[@class='inventory_item']"));
+	public List<WebElement> inventorylist = getDriver().findElements(By.xpath("//div[@class='inventory_item']"));
 	
 	@Step("Getting the title of page")
 	public String homeTitle()
 	{
-		return driver.getTitle();
+		return getDriver().getTitle();
 	}
 	
 	@Step("Clicking on menu button")
@@ -47,7 +47,7 @@ public class HomePage extends TestBase{
 	@Step("Selecting the value from sorting dropdown")
 	public void sort(String value)
 	{ 
-		WebElement sortDD = driver.findElement(By.xpath("//select[contains(@class, 'product_sort_container')]"));
+		WebElement sortDD = getDriver().findElement(By.xpath("//select[contains(@class, 'product_sort_container')]"));
 		
 	/*
 	 *  List<WebElement> sortDD = driver.findElememts(By.xpath("//select[contains(@class, 'product_sort_container')]//option"))
@@ -84,20 +84,20 @@ public class HomePage extends TestBase{
 	@Step("Getting the sorted items on the page")
 	public String sortedItem()
 	{
-		return driver.findElement(By.xpath("//div[contains(@class,'inventory_item_name')]")).getText();
+		return getDriver().findElement(By.xpath("//div[contains(@class,'inventory_item_name')]")).getText();
 	}
 	
 	
 	@Step("Adding items to cart : {0}")
 	public void addToCart(String itemname)
 	{
-		driver.findElement(By.xpath("//div[contains(text(),'"+itemname+"')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]")).click();
+		getDriver().findElement(By.xpath("//div[contains(text(),'"+itemname+"')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'add-to-cart')]")).click();
 	}
 	
 	@Step("Click on remove button : {0}")
 	public void remove(String itemname)
 	{
-		driver.findElement(By.xpath("//div[contains(text(),'"+itemname+"')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'remove')]")).click();
+		getDriver().findElement(By.xpath("//div[contains(text(),'"+itemname+"')]//ancestor::div[@class='inventory_item_description']//button[contains(@name,'remove')]")).click();
 	}
 	
 	

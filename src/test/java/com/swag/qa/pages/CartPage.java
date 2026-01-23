@@ -8,7 +8,7 @@ public class CartPage extends TestBase{
 	
 	public boolean cartList()
 	{
-		return driver.findElement(By.xpath("//div[@class='cart_list']")).isDisplayed();
+		return getDriver().findElement(By.xpath("//div[@class='cart_list']")).isDisplayed();
 	}
 
 }

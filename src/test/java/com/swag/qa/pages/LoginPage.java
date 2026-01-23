@@ -47,12 +47,12 @@ public class LoginPage extends TestBase{
 	//Initializing the OR
 	public LoginPage()
 	{
-		PageFactory.initElements(driver, this);
+		PageFactory.initElements(getDriver(), this);
 	}
 	
 	@Step("Get title of the page")
 	public String LoginTitle() {
-		return driver.getTitle();
+		return getDriver().getTitle();
 	}
 
 	@Step("Verify logo of the page")
@@ -68,7 +68,7 @@ public class LoginPage extends TestBase{
 		password.sendKeys(pwd);
 		//loginBtn.click();
 		
-		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		JavascriptExecutor js = ((JavascriptExecutor)getDriver());
 		js.executeScript("arguments[0].click();",loginBtn);
 		
 		return new HomePage();
